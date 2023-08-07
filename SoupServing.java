@@ -1,4 +1,5 @@
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 public class SoupServing {
     class Solution {
         private Map<Pair, Double> mp = new HashMap<>();
@@ -7,7 +8,7 @@ public class SoupServing {
             if (a <= 0 && b <= 0) return 0.5;
             if (a <= 0 && b > 0) return 1;
             if (a > 0 && b <= 0) return 0;
-            if (mp.containsKey(new Pair(a, b))) return mp.get(new Pair(a, b));
+            if (mp.containsKey(new Pair())) return mp.get(new Pair());
     
             double op1 = recur(a - 100, b);
             double op2 = recur(a - 75, b - 25);
@@ -15,7 +16,7 @@ public class SoupServing {
             double op4 = recur(a - 25, b - 75);
     
             double result = 0.25 * (op1 + op2 + op3 + op4);
-            mp.put(new Pair(a, b), result);
+            mp.put(new Pair(), result);
             return result;
         }
     
