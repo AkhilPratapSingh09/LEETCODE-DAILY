@@ -1,6 +1,9 @@
+import java.util.*;
+import javax.swing.tree.TreeNode;
+
+
 public class tobeinfected {
     
-import java.util.*;
 
 class Solution {
     public int amountOfTime(TreeNode root, int start) {
@@ -54,4 +57,3 @@ class Solution {
 
 }
 
-import javax.swing.tree.TreeNode;
