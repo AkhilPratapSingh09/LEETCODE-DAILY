@@ -12,5 +12,5 @@ public class missingnomb {
         }
         return  nums.length;
     }
-}
+    }
 }
